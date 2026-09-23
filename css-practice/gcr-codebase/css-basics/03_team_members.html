@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Team Members</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f6f8;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .team {
+            display: flex;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 25px;
+            margin: 10px;
+            border: 2px solid #bcccdc;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px #b0b8c1;
+            background-color: white;
+            min-height: 250px;
+        }
+
+        .lead {
+            background-color: #d9edf7;
+            border: 3px solid #247ba0;
+        }
+
+        @media (max-width: 600px) {
+            .team {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Our Team</h1>
+
+<div class="team">
+    <div class="card lead">
+        <h2>Vansh</h2>
+        <h3>Team Lead</h3>
+        <p>Leads the team and manages the project work.</p>
+    </div>
+
+    <div class="card">
+        <h2>Rahul</h2>
+        <h3>Developer</h3>
+        <p>Works on developing and testing the application.</p>
+    </div>
+
+    <div class="card">
+        <h2>Ananya</h2>
+        <h3>Designer</h3>
+        <p>Creates simple and useful designs for the project.</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing Plans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .plans {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            align-items: stretch;
+        }
+
+        .plan {
+            flex: 1;
+            padding: 30px;
+            border: 2px solid #bcccdc;
+            border-radius: 10px;
+            background-color: white;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .plan:hover {
+            transform: scale(1.05);
+            background-color: #e8f4f8;
+        }
+
+        .popular {
+            border: 3px solid #247ba0;
+            background-color: #d9edf7;
+        }
+
+        .price {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        li {
+            margin: 12px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #247ba0;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 600px) {
+            .plans {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="plans">
+
+    <div class="plan">
+        <h2>Basic</h2>
+        <p class="price">₹299</p>
+        <ul>
+            <li>5 Projects</li>
+            <li>Basic Support</li>
+            <li>5 GB Storage</li>
+        </ul>
+        <a class="button" href="#">Choose Plan</a>
+    </div>
+
+    <div class="plan popular">
+        <h2>Standard</h2>
+        <p class="price">₹599</p>
+        <ul>
+            <li>15 Projects</li>
+            <li>Priority Support</li>
+            <li>20 GB Storage</li>
+        </ul>
+        <a class="button" href="#">Choose Plan</a>
+    </div>
+
+    <div class="plan">
+        <h2>Premium</h2>
+        <p class="price">₹999</p>
+        <ul>
+            <li>Unlimited Projects</li>
+            <li>Premium Support</li>
+            <li>100 GB Storage</li>
+        </ul>
+        <a class="button" href="#">Choose Plan</a>
+    </div>
+
+</div>
+
+</body>
+</html>
