@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pricing</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f5f7;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 30px;
+        }
+
+        .pricing {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            gap: 25px;
+            padding: 30px;
+        }
+
+        .card {
+            flex: 1;
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            transition: 0.3s;
+            animation: fade 1s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .middle {
+            background-color: #dceaf7;
+            transform: scale(1.05);
+        }
+
+        .price {
+            font-size: 30px;
+            font-weight: bold;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 750px) {
+            .pricing {
+                flex-direction: column;
+            }
+
+            .middle {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Pricing Plans</h1>
+
+<div class="pricing">
+
+    <div class="card">
+        <h2>Basic</h2>
+        <p class="price">₹299</p>
+        <p>5 Projects</p>
+        <p>Basic Support</p>
+    </div>
+
+    <div class="card middle">
+        <h2>Standard</h2>
+        <p class="price">₹599</p>
+        <p>15 Projects</p>
+        <p>Priority Support</p>
+    </div>
+
+    <div class="card">
+        <h2>Premium</h2>
+        <p class="price">₹999</p>
+        <p>Unlimited Projects</p>
+        <p>Premium Support</p>
+    </div>
+
+</div>
+
+</body>
+</html>

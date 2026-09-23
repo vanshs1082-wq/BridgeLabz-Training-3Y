@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homepage</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            padding: 20px;
+            background-color: #17324d;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            padding: 40px;
+        }
+
+        .box {
+            flex: 1;
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #dceaf7;
+            border: 1px solid #9fb3c8;
+            transition: 0.3s;
+        }
+
+        .box:hover {
+            transform: rotate(2deg);
+        }
+
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background-color: #17324d;
+            color: white;
+        }
+
+        @media (max-width: 700px) {
+            main {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<main>
+    <div class="box">
+        <h2>Services</h2>
+        <p>We provide useful services.</p>
+    </div>
+
+    <div class="box">
+        <h2>Projects</h2>
+        <p>We create different projects.</p>
+    </div>
+
+    <div class="box">
+        <h2>Contact</h2>
+        <p>Contact us for more information.</p>
+    </div>
+</main>
+
+<footer>
+    <p>© 2026 Homepage</p>
+</footer>
+
+</body>
+</html>
