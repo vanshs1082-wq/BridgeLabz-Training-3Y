@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    color: #222;
+    background-color: #f6f7f8;
+}
+
+header {
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+article {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+}
+
+p {
+    line-height: 1.8;
+    letter-spacing: 0.5px;
+    text-align: left;
+}
+
+.serif {
+    font-family: Georgia, serif;
+}
+
+.sans {
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+.large {
+    font-size: 1.3em;
+}
+
+mark {
+    background-color: #ffe08a;
+    color: #222;
+}
+
+strong {
+    color: #247ba0;
+}
+
+em {
+    color: #e76f51;
+}
+
+p::first-letter {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+p::first-line {
+    font-weight: bold;
+}

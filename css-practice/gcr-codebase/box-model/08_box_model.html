@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box Model Exploration</title>
+    <link rel="stylesheet" href="08_box_model.css">
+</head>
+<body>
+<header>
+    <h1>CSS Box Model</h1>
+</header>
+
+<main>
+    <section class="model">
+        <div class="margin">
+            <div class="border">
+                <div class="padding">
+                    <div class="content">
+                        Content
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="description">
+        <p><strong>Content:</strong> The actual text or element.</p>
+        <p><strong>Padding:</strong> Space between content and border.</p>
+        <p><strong>Border:</strong> Line around the padding.</p>
+        <p><strong>Margin:</strong> Space outside the border.</p>
+        <p>Box 1 uses the default box model and Box 2 uses box-sizing: border-box.</p>
+        <div class="comparison">
+            <div class="default-box">Default box</div>
+            <div class="border-box">border-box</div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

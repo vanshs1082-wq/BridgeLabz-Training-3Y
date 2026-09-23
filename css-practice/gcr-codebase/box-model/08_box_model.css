@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f6f8;
+}
+
+header {
+    padding: 25px;
+    background-color: #17324d;
+    color: white;
+}
+
+main {
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.model {
+    background-color: #e9c46a;
+    padding: 35px;
+    outline: 2px solid #c77d00;
+}
+
+/* The layers represent margin, border, padding and content */
+.margin {
+    background-color: #90be6d;
+    padding: 35px;
+}
+
+.border {
+    background-color: #e76f51;
+    padding: 10px;
+    border: 10px solid #6d6875;
+}
+
+.padding {
+    background-color: #f4a261;
+    padding: 35px;
+}
+
+.content {
+    background-color: #fff;
+    padding: 30px;
+}
+
+.description {
+    max-width: 350px;
+}
+
+.comparison {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.default-box, .border-box {
+    width: 130px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #247ba0;
+    background-color: white;
+}
+
+.border-box {
+    box-sizing: border-box;
+}
