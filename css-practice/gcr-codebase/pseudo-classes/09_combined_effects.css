@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #17324d;
+    color: white;
+}
+
+.effects {
+    min-height: 70vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+    padding: 30px;
+}
+
+button {
+    padding: 18px 35px;
+    border: none;
+    border-radius: 8px;
+    background: #247ba0;
+    color: white;
+    font-size: 16px;
+    box-shadow: 0 4px 10px #aaa;
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2a9d8f;
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px #888;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+button:focus {
+    outline: 3px solid #f4a261;
+    outline-offset: 4px;
+}
+
+@media (max-width: 600px) {
+    .effects {
+        flex-direction: column;
+    }
+}

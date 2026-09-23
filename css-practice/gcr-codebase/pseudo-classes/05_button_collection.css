@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #17324d;
+    color: white;
+}
+
+/* Flexbox keeps buttons aligned with equal spacing */
+.buttons {
+    min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 14px 25px;
+    border-radius: 7px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px #bbb;
+}
+
+.primary {
+    background: #247ba0;
+    color: white;
+    border: 2px solid #247ba0;
+}
+
+.secondary {
+    background: #2a9d8f;
+    color: white;
+    border: 2px solid #2a9d8f;
+}
+
+.outline {
+    background: white;
+    color: #247ba0;
+    border: 2px solid #247ba0;
+}
+
+button:hover {
+    transform: translateY(-3px);
+}
+
+button:active {
+    transform: translateY(2px);
+}
+
+button:focus {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+button:disabled {
+    background: #aaa;
+    color: white;
+    border-color: #aaa;
+    cursor: not-allowed;
+    box-shadow: none;
+}

@@ -1,0 +1,55 @@
+/* Arrange all examples in one row */
+.examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 60px 20px;
+    flex-wrap: wrap;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #17324d;
+    color: white;
+}
+
+/* :hover changes an element when the mouse is over it */
+a:hover {
+    color: white;
+    background: #247ba0;
+}
+
+/* :active changes an element while it is being clicked */
+button:active {
+    background: #e76f51;
+    color: white;
+}
+
+/* :focus changes an element when it is selected */
+input:focus {
+    outline: 3px solid #2a9d8f;
+    background: #e8f7f4;
+}
+
+/* :nth-child() selects an element by its position */
+li:nth-child(2) {
+    color: #e76f51;
+    font-weight: bold;
+}
+
+a, button, input {
+    padding: 10px;
+}
+
+p {
+    max-width: 220px;
+    line-height: 1.5;
+}

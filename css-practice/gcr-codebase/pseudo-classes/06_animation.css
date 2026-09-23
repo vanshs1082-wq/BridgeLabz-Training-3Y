@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 25px;
+    background: #17324d;
+    color: white;
+}
+
+.animations {
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+/* Moving box animation */
+.moving-box {
+    width: 70px;
+    height: 70px;
+    background: #247ba0;
+    animation: move 2s ease-in-out infinite alternate;
+}
+
+/* Bouncing ball animation */
+.ball {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e76f51;
+    animation: bounce 1s ease-in-out infinite;
+    animation-delay: 0.3s;
+}
+
+/* Color-changing text */
+.changing-text {
+    animation: colorChange 2s ease-in-out infinite alternate;
+    animation-delay: 0.5s;
+    animation-direction: alternate;
+}
+
+@keyframes move {
+    from { transform: translateX(-50px); }
+    to { transform: translateX(50px); }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(30px); }
+    50% { transform: translateY(-30px); }
+}
+
+@keyframes colorChange {
+    from { color: #247ba0; }
+    to { color: #e76f51; }
+}
