@@ -1,0 +1,45 @@
+/* Fixed header and footer */
+header, footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    background-color: #17324d;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    z-index: 1;
+}
+
+header {
+    top: 0;
+}
+
+footer {
+    bottom: 0;
+}
+
+main {
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+section {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+/* Linear gradient */
+.linear {
+    background: linear-gradient(to right, #247ba0, #70c1b3);
+}
+
+/* Radial gradient with fixed attachment */
+.radial {
+    background: radial-gradient(circle, #e76f51, #8d3b2e);
+    background-attachment: fixed;
+}

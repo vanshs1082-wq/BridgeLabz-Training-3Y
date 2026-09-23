@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #17324d;
+    color: white;
+}
+
+/* Flexbox centers the boxes */
+.container {
+    min-height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.box {
+    padding: 20px;
+    color: white;
+    overflow: auto;
+}
+
+.one {
+    width: 200px;
+    height: 150px;
+    background-color: #247ba0;
+}
+
+.two {
+    width: 30%;
+    height: 20vh;
+    background-color: #2a9d8f;
+    min-height: 120px;
+}
+
+.three {
+    width: 15em;
+    height: 180px;
+    background-color: #e76f51;
+    min-height: 150px;
+    max-width: 300px;
+}

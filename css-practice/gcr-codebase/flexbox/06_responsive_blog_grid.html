@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Layout</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            gap: 20px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background-color: #17324d;
+            color: white;
+            padding: 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            padding: 25px;
+            background-color: #dceaf7;
+        }
+
+        aside li {
+            margin: 15px 0;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        article {
+            padding: 25px;
+            border: 1px solid #ccc;
+            background-color: #f7f9fa;
+        }
+
+        footer {
+            grid-area: footer;
+            background-color: #17324d;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 800px) {
+            .layout {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+            }
+
+            main {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+
+<header>
+    <h1>My Blog</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Blogs</a>
+        <a href="#">About</a>
+    </nav>
+</header>
+
+<aside>
+    <h2>Categories</h2>
+    <ul>
+        <li>Technology</li>
+        <li>Programming</li>
+        <li>Travel</li>
+        <li>Education</li>
+    </ul>
+</aside>
+
+<main>
+    <article>
+        <h2>Learning HTML</h2>
+        <p>HTML is used to create the structure of webpages.</p>
+    </article>
+
+    <article>
+        <h2>Learning CSS</h2>
+        <p>CSS is used to style webpages and create layouts.</p>
+    </article>
+</main>
+
+<footer>
+    <p>Contact: vansh@gmail.com</p>
+</footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dceaf7, #f4f6f8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 350px;
+    padding: 35px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #bbb;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 12px;
+    border-radius: 7px;
+    border: 1px solid #aaa;
+    font-size: 15px;
+}
+
+input:focus, select:focus {
+    outline: 3px solid #247ba0;
+    outline-offset: 2px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    background: #247ba0;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #17324d;
+}
